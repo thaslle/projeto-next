@@ -1,0 +1,11 @@
+.tags {
+    
+    li {
+        display: inline;
+        text-transform: lowercase;
+        
+        &:not(:last-child):after {
+            content: ', ';
+        }
+    }
+}

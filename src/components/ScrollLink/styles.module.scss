@@ -1,0 +1,60 @@
+.scrollLink {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--font-color);
+
+    .icon {
+        margin-left: 0.5ch;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 1.3em;
+        transform: translateY(0.05em);
+        line-height: 1rem;
+    }
+    
+    .icon,
+    .text {
+        z-index: 2;
+    }
+    .text {
+        display: inline-block;
+        position: relative;
+        font-weight: bold;
+        font-size: 1.3em;
+        line-height: 0.7em;
+    }
+    
+    &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        background-color: var(--bg-button);
+        mix-blend-mode: multiply;
+        z-index: 1;
+        opacity: 0;
+    
+        left: -0.15em;
+        top: -0.15em;
+        width: calc(100% + 0.3em);
+        height: calc(100% + 0.3em);
+    
+        clip-path: inset(8px round calc(1em / 8 + 0.05em));
+    
+        transition: all var(--transition-time) var(--transition-ease);
+    }
+    
+    &:hover{
+        text-shadow: none;
+        
+        &:after {
+            opacity: 1;
+            clip-path: inset(0 round calc(1em / 8 + 0.05em));
+        }
+
+        .text,
+        .icon {
+            color: var(--text-button);
+        }
+    }
+}

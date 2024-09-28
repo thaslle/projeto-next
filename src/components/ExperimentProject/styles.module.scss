@@ -1,0 +1,61 @@
+.experiment {
+
+    & > a {
+        display: block;
+        text-decoration: none;
+        color: var(--font-color);
+    }
+    figure {
+        position: relative;
+        overflow: hidden;
+        border-radius: calc(var(--grid-gutter) / 4);
+        margin-bottom: calc(var(--grid-gutter) / 2);
+        
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    .text {
+
+        .info {
+            margin-bottom: 0.5em;
+        }
+        .preview p {
+            line-height: 1.3em;
+            font-size: 1.1rem;
+        }
+    }
+
+    @media only screen and (min-width: 980px) {
+        & {
+            grid-row: span 6;
+            
+            &:nth-child(1) {
+                padding-top: calc(var(--grid-gutter)* 6);
+            }
+            &:nth-child(3) {
+                padding-top: calc(var(--grid-gutter)* 3);
+            }
+            &:nth-child(3n + 2) {
+                grid-row: span 7;
+            }
+            &:nth-child(3n + 3) {
+                grid-row: span 8;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 980px) {
+        & {
+            grid-row: span 6;
+            
+            &:nth-child(1) {
+                padding-top: calc(var(--grid-gutter)* 3);
+            }
+            &:nth-child(2n + 2) {
+                grid-row: span 7;
+            }
+        }
+    }
+}

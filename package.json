@@ -5,16 +5,31 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.8"
+    "framer-motion": "^11.5.4",
+    "imagesloaded": "^5.0.0",
+    "next": "^14.2.12",
+    "raw-loader": "^4.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "simple-input-events": "^2.0.0",
+    "stylelint": "^16.9.0",
+    "three": "^0.168.0"
   },
   "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "14.2.8"
+    "@eslint/js": "^9.10.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.8",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.35.2",
+    "globals": "^15.9.0",
+    "glslify-loader": "^2.0.0",
+    "prettier": "^3.3.3",
+    "sass": "^1.78.0"
   }
 }

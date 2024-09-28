@@ -1,0 +1,6 @@
+.wordWrap {
+    @media screen and (min-width: 980px) {
+        display: inline-block;
+        white-space: nowrap;
+    }    
+}

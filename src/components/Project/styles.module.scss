@@ -1,0 +1,49 @@
+.project {
+    & > a {
+        display: block;
+        color: var(--font-color);
+        text-decoration: none;
+    }
+
+    @media only screen and (min-width: 980px) {
+        &:nth-child(2),
+        &:nth-child(3) {
+            padding-top: calc(var(--grid-gutter)* 3);
+        }
+    }
+
+    header {
+        // cursor: var(--cursor-pointer);
+    
+        figure {
+            position: relative;
+            border-radius: calc(var(--grid-gutter) / 4);
+            margin-bottom: calc(var(--grid-gutter) / 2);
+    
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .text {
+
+            .info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 0.5em;
+                
+                h3 {
+                    font-size: 2rem;
+                    
+                    text-transform: lowercase;
+                }
+            }
+            .preview p {
+                line-height: 1.3em;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

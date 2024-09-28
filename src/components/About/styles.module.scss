@@ -1,0 +1,42 @@
+.about {
+    min-height: 100vh;
+    align-items: end;
+    padding-top: calc(var(--section-padding) * 3);
+    padding-bottom: var(--section-padding);
+
+    position: relative;
+    z-index: 2;
+
+    background: linear-gradient(180deg, transparent 0%, transparent 30%, var(--section-color) 100%);
+
+    .main {
+        min-height: 95vh;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .main, 
+    h2 {
+        grid-column: span 10;
+        position: relative;
+        z-index: 3;
+
+        @media screen and (max-width: 767px) {
+            & {    
+                grid-column: span 6;
+            }
+        }
+    }
+
+    h1 {
+        padding-block: 1em;
+    }
+    h2 {
+        padding-top: 2em;
+        padding-bottom: 1em;
+    }
+    
+}
+
+
+

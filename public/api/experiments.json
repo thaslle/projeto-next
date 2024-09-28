@@ -1,0 +1,150 @@
+[
+    {
+      "title": "Cubes",
+      "tags": [
+        {
+          "class": "development",
+          "name": "Development"
+        }
+      ],
+      "description": "Here we have a Three.js experiment that creates a playful set of boxes interacting with one another. The boxes bounce and collide in response to mouse movements, mimicking a fun physics-based simulation, bringing a dynamic and interactive visual effect to life.",
+      "image": "/images/experiments/experiment-cubes.jpg",
+      "aspect": "655/655",
+      "link": "https://codepen.io/thaslle/pen/xxvxpxm"
+    },
+    {
+      "title": "Notepad",
+      "tags": [
+        {
+          "class": "development",
+          "name": "Development"
+        },
+        {
+          "class": "design",
+          "name": "Design"
+        }
+      ],
+      "description": "This is an interface that simulates a notebook entirely made in CSS. HTML tags are used to emulate how we manually take notes. No images were used in this example.",
+      "image": "/images/experiments/experiment-notebook.png",
+      "aspect": "764/754",
+      "link": "https://codepen.io/thaslle/pen/QWREZyp"
+    },
+    {
+      "title": "Axo",
+      "tags": [
+        {
+          "class": "architecture",
+          "name": "3D Visualization"
+        }
+      ],
+      "description": "3D axonometric visualization inspired by the nostalgic memories of playing The Sims and SimCity, depicting a vibrant city corner. The scene was crafted using 3D modeling and rendering techniques, enhanced with detailed Photoshop and Illustrator work.",
+      "image": "/images/experiments/experiment-axo.jpg",
+      "aspect": "800/800",
+      "link": "https://www.behance.net/gallery/135976639/Amarelandia"
+    },
+    {
+      "title": "Background",
+      "tags": [
+        {
+          "class": "illustration",
+          "name": "Illustration"
+        }
+      ],
+      "description": "Background illustration of an abandoned city, crafted in Photoshop. This piece captures the eerie desolation and haunting beauty of an empty urban landscape, blending detailed digital painting techniques to evoke a sense of mystery and decay.",
+      "image": "/images/experiments/experiment-background.jpg",
+      "aspect": "600/672",
+      "link": "https://www.artstation.com/artwork/5BmN1O"
+    },
+    {
+      "title": "The Last of Us",
+      "tags": [
+        {
+          "class": "architecture",
+          "name": "3D Visualization"
+        }
+      ],
+      "description": "3D visualization experiment inspired by The Last of Us show. Combining 3D modeling, rendering, Photoshop, and Illustrator to create a detailed, atmospheric scene, capturing the essence of the series in a visually immersive piece.",
+      "image": "/images/experiments/experiment-the-last-of-us.jpg",
+      "aspect": "600/750",
+      "link": "https://www.behance.net/gallery/165990507/The-Last-of-Us"
+    },
+    {
+      "title": "Cowboy",
+      "tags": [
+        {
+          "class": "illustration",
+          "name": "Illustration"
+        }
+      ],
+      "description": "An engaging set of illustrations, featuring this cool cowboy. This collection showcases a variety of detailed and expressive drawings, each adding to the overall visual narrative",
+      "image": "/images/experiments/experiment-cowboy.png",
+      "aspect": "675/819",
+      "link": "https://www.artstation.com/artwork/XgYQ90"
+    },
+    {
+      "title": "Kiki's Delivery Service",
+      "tags": [
+        {
+          "class": "architecture",
+          "name": "3D Visualization"
+        }
+      ],
+      "description": "3D visualization of Okino Residence from Studio Ghibli's Kiki's Delivery Service. A blend of 3D modeling, rendering, Photoshop, and Illustrator, bringing to life the charming architecture and warmth of this iconic setting in a visually captivating scene.",
+      "image": "/images/experiments/experiment-kiki.jpg",
+      "aspect": "600/750",
+      "link": "https://www.behance.net/gallery/162665345/Okino-Residence"
+    },
+    {
+      "title": "CSS Chronometer",
+      "tags": [
+        {
+          "class": "development",
+          "name": "Development"
+        }
+      ],
+      "description": "CSS-only chronometer experiment utilizing pure CSS animations and transformations to simulate a ticking timer. No JavaScript is used, showcasing creative timing, transitions, and keyframe techniques for a visually dynamic effect.",
+      "image": "/images/experiments/experiment-css-chronometer.jpg",
+      "aspect": "600/600",
+      "link": "https://codepen.io/thaslle/pen/RwzVNRy"
+    },
+    {
+      "title": "Gator",
+      "tags": [
+        {
+          "class": "illustration",
+          "name": "Illustration"
+        }
+      ],
+      "description": "A study of a gator in a rendered style, exploring a different approach in illustration.",
+      "image": "/images/experiments/experiment-gator.jpg",
+      "aspect": "800/800",
+      "link": "https://www.artstation.com/artwork/03J61V"
+    },
+    {
+      "title": "Elf Bassist",
+      "tags": [
+        {
+          "class": "illustration",
+          "name": "Illustration"
+        }
+      ],
+      "description": "A fun character design exercise featuring some unique elf band members. This illustration explores distinct personalities and styles, capturing the playful spirit of fantasy character creation.",
+      "image": "/images/experiments/experiment-emo.jpg",
+      "aspect": "800/1066",
+      "link": "https://www.artstation.com/artwork/49knbq"
+    },
+    {
+      "title": "Pixels",
+      "tags": [
+        {
+          "class": "development",
+          "name": "Development"
+        }
+      ],
+      "description": "Here we have a JavaScript script that creates an image loading animation with a pixelated effect, emulating the concept of a device from the early 2000s.",
+      "image": "/images/experiments/experiment-pixel.png",
+      "aspect": "761/512",
+      "link": "https://codepen.io/thaslle/pen/QWRKNgv"
+    }
+    
+]

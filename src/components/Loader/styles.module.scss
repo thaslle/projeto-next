@@ -1,0 +1,28 @@
+.progress {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-transition);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 998;
+
+    p {
+        font-family: "PP Bitmap", sans-serif;
+        letter-spacing: -0.02em;
+        font-size: clamp(42px, 8vw, 8vw);
+        color: var(--font-color);
+
+        span {
+            animation: hide 0.8s step-start infinite;
+        }
+    }
+}
+
+@keyframes hide {
+    50% {
+      opacity: 0;
+    }
+}

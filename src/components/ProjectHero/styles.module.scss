@@ -1,0 +1,86 @@
+.projectHero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    
+    .spacer {
+        position: relative;
+        z-index: 3;
+        min-height: 50vh;
+        background: linear-gradient(180deg, transparent 0%, transparent 30%, var(--section-color) 100%);
+    }
+
+    .close {
+        position: fixed;
+        top: var(--section-padding);
+        right: var(--section-padding);
+        z-index: 20;
+        text-shadow: none;
+        z-index: 998;
+        
+        font-family: "PP Bitmap", sans-serif;
+        display: inline-block;
+        text-decoration: none;
+        cursor: var(--cursor-pointer);
+
+        a {
+            display: block;
+            position: relative;
+            z-index: 998;
+        }
+        
+        .icon {
+            margin-right: 0.5ch;
+            display: inline-block;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        
+        .icon,
+        .text {
+            z-index: 2;
+            color: var(--font-color);
+        }
+        .text {
+            display: inline-block;
+            position: relative;
+            font-weight: bold;
+            font-size: 1.5em;
+            line-height: 0.7em;
+        }
+        
+        &:after {
+            position: absolute;
+            display: block;
+            content: '';
+            background-color: var(--bg-button);
+            mix-blend-mode: multiply;
+            z-index: 1;
+            opacity: 0;
+        
+            left: -0.15em;
+            top: -0.15em;
+            width: calc(100% + 0.6em);
+            height: calc(100% + 0.3em);
+        
+            clip-path: inset(8px round calc(1em / 8 + 0.05em));
+        
+            transition: all var(--transition-time) var(--transition-ease);
+        }
+        
+        &:hover{
+            text-shadow: none;
+            
+            &:after {
+                opacity: 1;
+                clip-path: inset(0 round calc(1em / 8 + 0.05em));
+            }
+
+            .text,
+            .icon {
+                color: var(--text-button);
+            }
+        }
+    }
+
+}

@@ -1,0 +1,13 @@
+.projectView {    
+    padding-top: calc(var(--section-padding) * 3.5);
+
+    .list {
+        background: var(--section-color);
+        position: relative;
+        z-index: 3;
+
+        display: grid;
+        gap: calc(var(--grid-gutter)* 3);
+        
+    }
+}

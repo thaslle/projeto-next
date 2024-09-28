@@ -1,0 +1,25 @@
+.location {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: var(--section-padding);
+    z-index: 997;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    text-shadow: none;
+ 
+    p {
+        font-size: 0.9rem;
+        
+        .clock span {
+            animation: blink 1s step-start infinite;
+        }
+    }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
