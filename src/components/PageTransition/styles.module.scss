@@ -5,6 +5,7 @@
         width: 100vw;
         height: 100vh;
         display: grid;
+        transform: rotate(180deg);
         left: 0;
         top: 0;
         pointer-events: none;
