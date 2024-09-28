@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
   // webpack(config) {
   //   // Add rule to handle GLSL files
   //   config.module.rules.push({
