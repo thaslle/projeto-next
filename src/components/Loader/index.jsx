@@ -1,7 +1,6 @@
 import styles from './styles.module.scss';
 
 const Loader = () => {
-  console.log('cheguei aqui');
   const count = 8;
   return (
     <div className={styles.progress}>

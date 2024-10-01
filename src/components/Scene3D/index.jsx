@@ -7,7 +7,7 @@ import { AsciiEffect } from 'three/addons/effects/AsciiEffect.js';
 
 import styles from './styles.module.scss';
 
-const Scene3D = () => {
+const Scene3D = ({ onProgress }) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -43,7 +43,7 @@ const Scene3D = () => {
 
       //When loading is done
       loadingManager.onLoad = () => {
-        // onProgress(100);
+        onProgress(100);
 
         mac.rotation.x = -Math.PI / 2; // Adjust orientation if needed
         mac.rotation.z = 0; // Adjust rotation if needed
@@ -53,15 +53,15 @@ const Scene3D = () => {
       // Collada loader
       const loader = new ColladaLoader(loadingManager);
       loader.load('/models/mac/mac.dae', (collada) => {
-        // onProgress(100);
+        onProgress(100);
         mac = collada.scene;
       });
 
-      // Handle the loading progress
-      // loadingManager.onProgress = (url, itemsLoaded, itemsTotal) => {
-      //   const currentProgress = Math.round((itemsLoaded / itemsTotal) * 100);
-      //   onProgress(currentProgress);
-      // };
+      //Handle the loading progress
+      loadingManager.onProgress = (url, itemsLoaded, itemsTotal) => {
+        const currentProgress = Math.round((itemsLoaded / itemsTotal) * 100);
+        onProgress(currentProgress);
+      };
 
       // Lights
       const ambientLight = new THREE.AmbientLight(0xffffff);
@@ -130,7 +130,7 @@ const Scene3D = () => {
 
     // Cleanup on component unmount
     return () => {
-      // onProgress(0); // Reset progress when component unmounts
+      onProgress(0); // Reset progress when component unmounts
       window.removeEventListener('resize', onWindowResize);
       if (containerRef.current) {
         containerRef.current.removeChild(effect.domElement);

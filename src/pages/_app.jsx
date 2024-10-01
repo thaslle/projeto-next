@@ -2,7 +2,7 @@ import './styles/reset.css';
 import './styles/global.scss';
 
 import Head from 'next/head';
-import { Suspense } from 'react';
+import { useState, useEffect } from 'react';
 
 import { AnimatePresence } from 'framer-motion';
 import { Wrapper } from '../templates/Wrapper';
@@ -19,6 +19,20 @@ const Scene3D = dynamic(() => import('../components/Scene3D'), {
 });
 
 export default function App({ Component, pageProps, router }) {
+  const [progress, setProgress] = useState(0);
+  const [isLoadingComplete, setIsLoadingComplete] = useState(false);
+
+  // Once the progress reaches 100%, we trigger the animation and allow the content to render
+  useEffect(() => {
+    if (progress === 100) {
+      const timer = setTimeout(() => {
+        setIsLoadingComplete(true);
+      }, 500); // Optional: 500ms delay to let loader animation finish
+
+      return () => clearTimeout(timer); // Cleanup on unmount
+    }
+  }, [progress]);
+
   return (
     <Wrapper>
       <Head>
@@ -29,12 +43,19 @@ export default function App({ Component, pageProps, router }) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Suspense fallback={<Loader />}>
+
+      {/* Display the loader until progress reaches 100% */}
+      {!isLoadingComplete && <Loader />}
+
+      {/* Once loading is complete, render the main content */}
+      {isLoadingComplete && (
         <AnimatePresence mode="wait">
           <Component key={router.asPath} {...pageProps} />
         </AnimatePresence>
-        <Scene3D />
-      </Suspense>
+      )}
+
+      {/* Scene3D starts immediately to drive the progress */}
+      <Scene3D onProgress={(p) => setProgress(p)} />
     </Wrapper>
   );
 }
