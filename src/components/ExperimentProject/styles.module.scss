@@ -24,6 +24,12 @@
         .preview p {
             line-height: 1.3em;
             font-size: 1.1rem;
+
+            @media only screen and (max-width: 767px) {
+                & {
+                    font-size: 1rem;
+                }
+            }
         }
     }
 
