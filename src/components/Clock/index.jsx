@@ -42,7 +42,7 @@ export function Clock() {
   };
 
   return (
-    <nav className={styles.location}>
+    <nav id="nav-location" className={styles.location}>
       <p>
         São Paulo, <span className={styles.clock}>{formatTime(time)}</span>
       </p>

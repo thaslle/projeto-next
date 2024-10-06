@@ -20,11 +20,9 @@ export const ProjectView = ({ project, projects }) => {
       <section className={styles.projectView}>
         <ProjectHero project={project} />
         <div className={`${styles.list} section`}>
-          <div className="wrapper">
-            <ProjectAbout project={project} />
-            <ProjectInfo project={project} />
-            <ProjectLines project={project} />
-          </div>
+          <ProjectAbout project={project} />
+          <ProjectInfo project={project} />
+          <ProjectLines project={project} />
         </div>
         <ProjectOthers projects={projects} />
       </section>

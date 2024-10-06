@@ -352,10 +352,6 @@
       "slug": "bday",
       "tags": [
         {
-          "class": "development",
-          "name": "Development"
-        },
-        {
           "class": "design",
           "name": "Design"
         },  

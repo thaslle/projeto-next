@@ -7,7 +7,7 @@
     &:before {
         content: '';
         display: block;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         bottom: 0;
@@ -22,7 +22,7 @@
     &:after {
         content: '';
         display: block;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         bottom: 0;
@@ -33,11 +33,10 @@
         pointer-events: none;
         animation: flicker .15s infinite;
     }
-
     & > .content {
         position: relative;
         z-index: 1;
-        background-color: var(--bg-transition);
+        // background-color: var(--bg-transition);
     }
 }
   

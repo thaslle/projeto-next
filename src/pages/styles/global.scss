@@ -16,6 +16,15 @@
     font-display: block;
 }
 
+@font-face {
+    font-family: 'MS Sans Serif';
+    src: url('/fonts/ms-sans-serif-regular.woff2') format('woff2'),
+         url('/fonts/ms-sans-serif-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
 :root {
     --bg-color: #0000ff;
     --bg-transition: #000022;
@@ -51,12 +60,12 @@ html {
     cursor: var(--cursor-default);
 }
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'MS Sans Serif', Arial, Helvetica, sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     color: var(--font-color);
-    background-color: var(--bg-transition);
+    background-color: var(--bg-color);
     scroll-behavior: smooth;
 
     text-shadow: 1px 1px 0 var(--bg-color),
@@ -193,4 +202,21 @@ h2 {
 100% {
     opacity: 1;
 }
+}
+
+
+#wrapper-tv-effect:has(.in-view) {
+    &:after,
+    &:before {
+        opacity: 0;
+        box-shadow: none;
+    }
+    &:after {
+        z-index: -1;
+    }
+
+    #nav-location,
+    #project-close {
+        opacity: 0.65;
+    }
 }

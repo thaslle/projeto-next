@@ -4,10 +4,6 @@
     .list {
         background: var(--section-color);
         position: relative;
-        z-index: 3;
-
-        display: grid;
-        gap: calc(var(--grid-gutter)* 3);
-        
+        z-index: 3;       
     }
 }
