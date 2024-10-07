@@ -18,6 +18,12 @@
         background-size: 100% 2px, 3px 100%;
         pointer-events: none;
         opacity: 0.75;
+
+        @media only screen and (max-width: 767px) {
+            & {
+                position: absolute;
+            }
+        }
     }
     &:after {
         content: '';
@@ -32,6 +38,12 @@
         z-index: 2;
         pointer-events: none;
         animation: flicker .15s infinite;
+
+        @media only screen and (max-width: 767px) {
+            & {
+                position: absolute;
+            }
+        }
     }
     & > .content {
         position: relative;
