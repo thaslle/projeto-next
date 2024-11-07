@@ -1,5 +1,26 @@
 [
   {
+    "title": "Basketball",
+    "tags": [
+      {
+        "class": "development",
+        "name": "Development"
+      },
+      {
+        "class": "architecture",
+        "name": "3D Modeling"
+      },
+      {
+        "class": "design",
+        "name": "Design"
+      }
+    ],
+    "description": "A web-based basketball game developed with React Three Fiber, allowing players to shoot hoops with real-time physics and smooth animations. I created the full experience—from designing the UI to modeling 3D assets that bring the court to life. Every detail is crafted to make each shot feel satisfying and immersive. Let’s shoot some hoops!",
+    "image": "/images/experiments/experiment-basketball.jpg",
+    "aspect": "655/815",
+    "link": "https://thaslle-basketball.netlify.app/"
+  },
+  {
     "title": "Shader",
     "tags": [
       {

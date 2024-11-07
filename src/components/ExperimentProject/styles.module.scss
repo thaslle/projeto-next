@@ -35,7 +35,7 @@
 
     @media only screen and (min-width: 980px) {
         & {
-            grid-row: span 6;
+            grid-row: span 8;
             
             &:nth-child(1) {
                 padding-top: calc(var(--grid-gutter)* 6);
